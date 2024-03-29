@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class To_Do_HomePage extends StatefulWidget {
@@ -11,7 +13,18 @@ class _To_Do_HomePageState extends State<To_Do_HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[300],
+      backgroundColor: Colors.yellow[300],
+      appBar: AppBar(
+        backgroundColor: Colors.yellow,
+        title: Center(
+            child: Text(
+          "TO DO",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        )),
+        elevation: 0,
+      ),
     );
   }
 }
