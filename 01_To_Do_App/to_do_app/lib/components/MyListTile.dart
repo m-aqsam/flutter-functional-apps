@@ -7,6 +7,7 @@ class MyListTile extends StatelessWidget {
   final String taskName;
   final bool taskCompleted;
   void Function(BuildContext)? deleteFunction;
+  void Function(BuildContext)? editFunction;
 
   Function(bool?)? onChanged;
   MyListTile({
@@ -15,6 +16,7 @@ class MyListTile extends StatelessWidget {
     required this.taskCompleted,
     required this.onChanged,
     required this.deleteFunction,
+    required this.editFunction,
   });
 
   @override
@@ -22,6 +24,7 @@ class MyListTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 25, right: 25, top: 25),
       child: Slidable(
+        // End ActionPane
         endActionPane: ActionPane(
           motion: StretchMotion(),
           children: [
@@ -33,8 +36,22 @@ class MyListTile extends StatelessWidget {
             )
           ],
         ),
+
+        // Start Action Pane
+
+        startActionPane: ActionPane(
+          motion: StretchMotion(),
+          children: [
+            SlidableAction(
+              onPressed: editFunction,
+              icon: Icons.edit,
+              backgroundColor: Colors.red,
+              borderRadius: BorderRadius.circular(12),
+            )
+          ],
+        ),
         child: Container(
-          padding: EdgeInsets.all(25),
+          padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
             color: Colors.yellow,
             borderRadius: BorderRadius.circular(12),
