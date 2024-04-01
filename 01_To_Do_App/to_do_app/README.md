@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+![341shots_so](https://github.com/m-aqsam/Flutter-Functional-Apps/assets/121599719/9d154c35-3420-4c5e-928d-004b47b62de2)
+
+https://github.com/m-aqsam/Flutter-Functional-Apps/assets/121599719/98385b02-5a99-4881-9f36-a30fcc55484f
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
