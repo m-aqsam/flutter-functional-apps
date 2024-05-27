@@ -1,1 +1,1 @@
-Functional Apps Repo.
+Flutter Functional Apps Repo.
