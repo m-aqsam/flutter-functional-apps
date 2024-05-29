@@ -1,6 +1,6 @@
 # notes_app
 
-A new Flutter project.
+A new Flutter Notes App With Offline Database (Isar Database),
 
 ## Getting Started
 
