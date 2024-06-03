@@ -13,7 +13,11 @@ class _Notes_PageState extends State<Notes_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // Continue ..
+
+      //
+
+      
+        
 
         );
   }
