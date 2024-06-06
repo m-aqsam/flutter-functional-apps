@@ -1,4 +1,4 @@
-# notes_app
+# notes_app with Offline Database
 
 A new Flutter Notes App With Offline Database (Isar Database),
 
