@@ -1,6 +1,6 @@
 import 'package:isar/isar.dart';
 
-part 'note.g.dart'; // error trying to solve
+part 'note.g.dart'; // still not solve
 
 @collection
 class Notes {
