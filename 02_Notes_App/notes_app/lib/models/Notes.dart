@@ -3,7 +3,7 @@ import 'package:isar/isar.dart';
 part 'note.g.dart'; // still not solve
 
 // I am leaving this project as it is and creating new
-//project maybe the solution of this .
+//project maybe the solution of this error
 
 @collection
 class Notes {
