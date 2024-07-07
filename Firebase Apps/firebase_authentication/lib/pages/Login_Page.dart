@@ -22,6 +22,7 @@ class _Login_PageState extends State<Login_Page> {
 
     showDialog(
       context: context,
+      barrierDismissible: false,
       builder: (context) {
         return Center(
           child: CircularProgressIndicator(),
@@ -29,15 +30,74 @@ class _Login_PageState extends State<Login_Page> {
       },
     );
 
-    // try to user sign in
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email: email_Controller.text,
-      password: password_Controller.text,
-    );
+    try {
+      // try to user sign in
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: email_Controller.text,
+        password: password_Controller.text,
+      );
 
-    //pop the loading circle
+      // pop the loading circle
+      if (mounted) {
+        Navigator.pop(context);
+      }
+    } on FirebaseAuthException catch (e) {
+      await Future.delayed(Duration(milliseconds: 100)); // Add a small delay
+      if (mounted) {
+        Navigator.pop(context);
+      }
+      if (e.code == 'user-not-found') {
+        wrongEmailAlert();
+      } else if (e.code == 'wrong-password') {
+        wrongEPassAlert();
+      }
+    }
+  }
 
-    Navigator.pop(context);
+  // Wrong Email Alert Dialogue
+
+  void wrongEmailAlert() {
+    if (mounted) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text('Wrong Email'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text("OK"),
+              ),
+            ],
+          );
+        },
+      );
+    }
+  }
+
+  // Wrong Pass Alert Dialogue
+
+  void wrongEPassAlert() {
+    if (mounted) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text('Wrong Password for that Email'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text("OK"),
+              ),
+            ],
+          );
+        },
+      );
+    }
   }
 
   @override
