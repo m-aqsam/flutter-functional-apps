@@ -10,3 +10,4 @@ class Notes {
   Id id = Isar.autoIncrement;
   String? text;
 }
+ 
