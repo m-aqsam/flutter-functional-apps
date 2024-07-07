@@ -1,5 +1,6 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_authentication/components/IconTile.dart';
 import 'package:firebase_authentication/components/MyButton.dart';
 import 'package:firebase_authentication/components/MyTextField.dart';
@@ -16,7 +17,28 @@ class _Login_PageState extends State<Login_Page> {
   final email_Controller = TextEditingController();
   final password_Controller = TextEditingController();
 
-  void signUserIn() {}
+  void signUserIn() async {
+    //loading circle
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return Center(
+          child: CircularProgressIndicator(),
+        );
+      },
+    );
+
+    // try to user sign in
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: email_Controller.text,
+      password: password_Controller.text,
+    );
+
+    //pop the loading circle
+
+    Navigator.pop(context);
+  }
 
   @override
   Widget build(BuildContext context) {
