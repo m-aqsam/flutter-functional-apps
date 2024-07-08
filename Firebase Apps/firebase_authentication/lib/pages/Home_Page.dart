@@ -21,8 +21,14 @@ class _Home_PageState extends State<Home_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.grey.shade800,
         actions: [
-          IconButton(onPressed: signUserOut, icon: Icon(Icons.logout_rounded))
+          IconButton(
+              onPressed: signUserOut,
+              icon: Icon(
+                Icons.logout_rounded,
+                color: Colors.white,
+              ))
         ],
       ),
       body: Center(
