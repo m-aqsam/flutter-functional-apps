@@ -7,7 +7,11 @@ import 'package:firebase_authentication/components/MyTextField.dart';
 import 'package:flutter/material.dart';
 
 class Login_Page extends StatefulWidget {
-  const Login_Page({super.key});
+  final Function()? onTap;
+  const Login_Page({
+    super.key,
+    required this.onTap,
+  });
 
   @override
   State<Login_Page> createState() => _Login_PageState();
@@ -42,57 +46,39 @@ class _Login_PageState extends State<Login_Page> {
         Navigator.pop(context);
       }
     } on FirebaseAuthException catch (e) {
-      await Future.delayed(Duration(milliseconds: 100)); // Add a small delay
+      // await Future.delayed(Duration(milliseconds: 100)); // Add a small delay
       if (mounted) {
         Navigator.pop(context);
       }
-      if (e.code == 'user-not-found') {
-        wrongEmailAlert();
-      } else if (e.code == 'wrong-password') {
-        wrongEPassAlert();
-      }
+
+      // show error
+
+      errroMessage(e.code);
     }
   }
 
   // Wrong Email Alert Dialogue
 
-  void wrongEmailAlert() {
+  void errroMessage(String message) {
     if (mounted) {
       showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text('Wrong Email'),
+            title: Text(message),
             actions: [
-              TextButton(
+              MaterialButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text("OK"),
-              ),
-            ],
-          );
-        },
-      );
-    }
-  }
-
-  // Wrong Pass Alert Dialogue
-
-  void wrongEPassAlert() {
-    if (mounted) {
-      showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            title: Text('Wrong Password for that Email'),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text("OK"),
-              ),
+                color: Colors.grey.shade700,
+                child: Text(
+                  "OK",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              )
             ],
           );
         },
@@ -177,6 +163,7 @@ class _Login_PageState extends State<Login_Page> {
 
                 MyButton(
                   onTap: signUserIn,
+                  text: "Sign In",
                 ),
 
                 SizedBox(height: 30),
@@ -229,10 +216,18 @@ class _Login_PageState extends State<Login_Page> {
                   children: [
                     Text("Not a member?"),
                     SizedBox(width: 6),
-                    Text(
-                      "Register now",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.blue),
+                    InkWell(
+                      onTap: () {
+                        //
+                      },
+                      child: InkWell(
+                        onTap: widget.onTap,
+                        child: Text(
+                          "Register now",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.blue),
+                        ),
+                      ),
                     ),
                   ],
                 )
