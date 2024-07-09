@@ -22,13 +22,22 @@ class _Home_PageState extends State<Home_Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.shade800,
+        title: Center(
+          child: Text(
+            "Home Page",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
         actions: [
           IconButton(
-              onPressed: signUserOut,
-              icon: Icon(
-                Icons.logout_rounded,
-                color: Colors.white,
-              ))
+            onPressed: signUserOut,
+            icon: Icon(
+              Icons.logout_rounded,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
       body: Center(
