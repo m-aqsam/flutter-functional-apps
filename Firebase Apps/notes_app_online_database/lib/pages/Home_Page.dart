@@ -137,14 +137,11 @@ class _Home_PageState extends State<Home_Page> {
                 Divider(),
                 SizedBox(height: 10),
 
-                Container(
-                  alignment: Alignment.bottomCenter,
-                  child: Text(
-                    "Design and dev by @aqsam",
-                  ),
-                ),
-
                 // text design and dev
+
+                Text(
+                  "Design and dev by @aqsam",
+                ),
               ],
             ),
           )),
