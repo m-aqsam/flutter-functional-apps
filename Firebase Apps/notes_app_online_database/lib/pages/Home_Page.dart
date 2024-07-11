@@ -119,7 +119,7 @@ class _Home_PageState extends State<Home_Page> {
               children: [
                 // text
 
-                SizedBox(height: 330),
+                SizedBox(height: 300),
                 // toggle (Dark/light)
                 CupertinoSwitch(
                   value: Provider.of<ThemeProvider>(context).isDarkMode,
@@ -127,7 +127,7 @@ class _Home_PageState extends State<Home_Page> {
                       Provider.of<ThemeProvider>(context, listen: false)
                           .toggleTheme(),
                 ),
-                SizedBox(height: 10),
+                //SizedBox(height: 10),
                 // text
                 Text(
                   "Share notes with your friend's. ",
