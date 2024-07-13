@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, camel_case_types, prefer_const_literals_to_create_immutables
 
-import 'package:chat_application/auth/Auth_Service.dart';
+import 'package:chat_application/services/auth/Auth_Service.dart';
 import 'package:chat_application/components/My_Button.dart';
 import 'package:chat_application/components/My_TextField.dart';
 import 'package:flutter/material.dart';
