@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:chat_application/auth/Auth_Gate.dart';
+import 'package:chat_application/services/auth/Auth_Gate.dart';
 import 'package:chat_application/firebase_options.dart';
 import 'package:chat_application/theme/Light_Mode.dart';
 import 'package:firebase_core/firebase_core.dart';
