@@ -18,8 +18,11 @@ class Home_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text("QuickChat"),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
       drawer: My_Drawer(),
       body: _buildUserList(),
@@ -70,6 +73,7 @@ class Home_Page extends StatelessWidget {
               MaterialPageRoute(
                 builder: (context) => Chat_Page(
                   recieverEmail: userData['email'],
+                  recieverID: userData['uid'],
                 ),
               ));
         },
