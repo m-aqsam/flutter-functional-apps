@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 class Home_Page extends StatelessWidget {
   Home_Page({super.key});
 
-  // chat & auth service
+  // chat and auth service
 
   final ChatService _chatService = ChatService();
   final AuthService _authService = AuthService();
