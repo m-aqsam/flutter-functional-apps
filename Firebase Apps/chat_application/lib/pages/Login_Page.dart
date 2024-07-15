@@ -121,7 +121,7 @@ class _Login_PageState extends State<Login_Page> {
 
               SizedBox(height: 20),
 
-              // register now
+              // Register now
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
