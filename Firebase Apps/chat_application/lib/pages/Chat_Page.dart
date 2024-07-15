@@ -92,7 +92,7 @@ class Chat_Page extends StatelessWidget {
     );
   }
 
-  // _buildMessageItem
+  // _buildMessageItem widget
 
   Widget _buildMessageItem(DocumentSnapshot doc) {
     Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
