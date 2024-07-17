@@ -1,6 +1,6 @@
 # firebase_authentication
 
-A new Flutter project.
+A new Flutter Firebase Authentication project which requires email and password required to logged in to app.
 
 ## Getting Started
 
