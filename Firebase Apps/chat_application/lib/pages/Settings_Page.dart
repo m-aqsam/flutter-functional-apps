@@ -19,7 +19,7 @@ class Settings_Page extends StatelessWidget {
         ),
         body: Column(
           children: [
-            // Dark or light mode
+            // Dark and light mode
 
             Container(
               decoration: BoxDecoration(
