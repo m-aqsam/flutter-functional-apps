@@ -133,7 +133,7 @@ class Chat_Page extends StatelessWidget {
                 controller: txtController),
           ),
 
-          // send button
+          // Send button
 
           Container(
             decoration: BoxDecoration(
