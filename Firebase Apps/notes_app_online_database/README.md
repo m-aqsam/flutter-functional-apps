@@ -1,6 +1,6 @@
 # notes_app_online_database
 
-A new Flutter project.
+A new Flutter Noted Application project with firebase database to store notes and display in app.
 
 ## Getting Started
 
