@@ -7,7 +7,7 @@ import 'package:chat_application/services/chat/Chat_Service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class Chat_Page extends StatelessWidget {
+class Chat_Page extends StatefulWidget {
   final String recieverEmail;
   final String recieverID;
   Chat_Page({
@@ -16,27 +16,76 @@ class Chat_Page extends StatelessWidget {
     required this.recieverID,
   });
 
-  // TExt Controller
+  @override
+  State<Chat_Page> createState() => _Chat_PageState();
+}
 
+class _Chat_PageState extends State<Chat_Page> {
+  // TExt Controller
   final TextEditingController txtController = TextEditingController();
 
   // chat and auth services
-
   final ChatService _chatService = ChatService();
   final AuthService _authService = AuthService();
 
-  // void sendMessage Method
+  // Focus Node => For textfield focus then add scroll
 
+  FocusNode focusNode = FocusNode();
+
+  @override
+  void initState() {
+    // add listener to focus node
+    focusNode.addListener(() {
+      if (focusNode.hasFocus) {
+        // cause a delay so the keyboard has to show up
+        // then the remaining space will be calculated on page
+        // then scroll down
+
+        Future.delayed(
+          Duration(milliseconds: 500),
+          () => scrollDown(),
+        );
+      }
+    });
+
+    // wait for the listView to show and then scroll to the bottom
+    Future.delayed(
+      Duration(milliseconds: 500),
+      () => scrollDown(),
+    );
+  }
+
+  @override
+  void dispose() {
+    focusNode.dispose();
+    txtController.dispose();
+    super.dispose();
+  }
+
+  // Scroll Controller
+  final ScrollController scrollController = ScrollController();
+
+  void scrollDown() {
+    // scroll down to the bottom of the list
+    scrollController.animateTo(
+      scrollController.position.maxScrollExtent,
+      duration: Duration(milliseconds: 800),
+      curve: Curves.fastOutSlowIn,
+    );
+  }
+
+  // void sendMessage Method
   void sendMessage() async {
     // check if there is something to send a message
 
     if (txtController.text.isNotEmpty) {
-      await _chatService.sendMessage(recieverID, txtController.text);
+      await _chatService.sendMessage(widget.recieverID, txtController.text);
     }
 
     // clear the controller / Message box
 
     txtController.clear();
+    scrollDown();
   }
 
   @override
@@ -44,7 +93,7 @@ class Chat_Page extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
-        title: Text(recieverEmail),
+        title: Text(widget.recieverEmail),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -63,12 +112,11 @@ class Chat_Page extends StatelessWidget {
   }
 
   // _buildMessageList Widget
-
   Widget _buildMessageList() {
     String senderID = _authService.getCurrentUser()!.uid;
 
     return StreamBuilder(
-      stream: _chatService.getMessage(recieverID, senderID),
+      stream: _chatService.getMessage(widget.recieverID, senderID),
       builder: (context, snapshot) {
         // errors
 
@@ -85,6 +133,7 @@ class Chat_Page extends StatelessWidget {
         // return listView
 
         return ListView(
+          controller: scrollController,
           children:
               snapshot.data!.docs.map((doc) => _buildMessageItem(doc)).toList(),
         );
@@ -93,7 +142,6 @@ class Chat_Page extends StatelessWidget {
   }
 
   // _buildMessageItem widget
-
   Widget _buildMessageItem(DocumentSnapshot doc) {
     Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
 
@@ -120,7 +168,6 @@ class Chat_Page extends StatelessWidget {
   }
 
   // Build Message Input
-
   Widget _buildUserInput() {
     return Padding(
       padding: const EdgeInsets.only(bottom: 30),
@@ -128,9 +175,11 @@ class Chat_Page extends StatelessWidget {
         children: [
           Expanded(
             child: My_TextField(
-                hintText: "Type a message",
-                obsecureText: false,
-                controller: txtController),
+              hintText: "Type a message",
+              obsecureText: false,
+              controller: txtController,
+              focusNode: focusNode,
+            ),
           ),
 
           // Send button
