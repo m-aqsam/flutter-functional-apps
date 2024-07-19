@@ -1,7 +1,6 @@
 import 'package:chat_application/models/Message.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class ChatService {
   // get instance of firestore
