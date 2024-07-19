@@ -7,11 +7,13 @@ class My_TextField extends StatelessWidget {
   final String hintText;
   final bool obsecureText;
   final TextEditingController controller;
+  final FocusNode? focusNode;
   My_TextField({
     super.key,
     required this.hintText,
     required this.obsecureText,
     required this.controller,
+    this.focusNode,
   });
 
   @override
@@ -21,6 +23,7 @@ class My_TextField extends StatelessWidget {
       child: TextField(
         obscureText: obsecureText,
         controller: controller,
+        focusNode: focusNode,
         style: TextStyle(
           color: Colors.grey.shade800,
         ),
