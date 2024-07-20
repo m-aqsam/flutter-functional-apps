@@ -150,7 +150,7 @@ class _Chat_PageState extends State<Chat_Page> {
     bool isCurrentUIser =
         data['senderID'] == _authService.getCurrentUser()!.uid;
 
-    // check if the current user then message on right side other wise left side
+    // check if the current user then message on right side otherwise left side.
 
     var alignment =
         isCurrentUIser ? Alignment.centerRight : Alignment.centerLeft;
