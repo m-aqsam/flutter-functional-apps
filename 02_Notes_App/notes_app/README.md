@@ -1,5 +1,9 @@
 # notes_app with Offline Database
 
+#Error!
+
+Not Completed due to face some issue with offline database .
+
 A new Flutter Notes App With Offline Database (Isar Database),
 
 ## Getting Started
