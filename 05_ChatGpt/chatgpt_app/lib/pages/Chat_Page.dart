@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:chat_gpt_sdk/chat_gpt_sdk.dart';
-import 'package:chatgpt_app/consts.dart';
 import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 
