@@ -82,91 +82,93 @@ class _Register_PageState extends State<Register_Page> {
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.surface,
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Icon
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Icon
 
-              Icon(
-                Icons.message_rounded,
-                color: Theme.of(context).colorScheme.primary,
-                size: 80,
-              ),
-              SizedBox(height: 20),
-
-              // Text / Description
-
-              Text(
-                "Let's create an account for you !",
-                style: TextStyle(
+                Icon(
+                  Icons.message_rounded,
                   color: Theme.of(context).colorScheme.primary,
-                  fontSize: 18,
+                  size: 80,
                 ),
-              ),
-              SizedBox(height: 30),
+                SizedBox(height: 20),
 
-              // Email Textfield
+                // Text / Description
 
-              My_TextField(
-                hintText: "Email",
-                obsecureText: false,
-                controller: emailController,
-              ),
-
-              SizedBox(height: 10),
-
-              // Password TextField
-              My_TextField(
-                hintText: "Password",
-                obsecureText: true,
-                controller: passwordController,
-              ),
-              SizedBox(height: 10),
-
-              // Confirm Password TextField
-              My_TextField(
-                hintText: "Confirm Password",
-                obsecureText: true,
-                controller: confirmpasswordController,
-              ),
-
-              SizedBox(height: 20),
-
-              // Login Button
-
-              My_Button(
-                onTap: () => register(context),
-                btnText: "Register",
-              ),
-
-              SizedBox(height: 20),
-
-              // register now
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Already have an account ? ",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
+                Text(
+                  "Let's create an account for you !",
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.primary,
+                    fontSize: 18,
                   ),
-                  InkWell(
-                    onTap: widget.onTap,
-                    child: Text(
-                      "Login now ",
+                ),
+                SizedBox(height: 30),
+
+                // Email Textfield
+
+                My_TextField(
+                  hintText: "Email",
+                  obsecureText: false,
+                  controller: emailController,
+                ),
+
+                SizedBox(height: 10),
+
+                // Password TextField
+                My_TextField(
+                  hintText: "Password",
+                  obsecureText: true,
+                  controller: passwordController,
+                ),
+                SizedBox(height: 10),
+
+                // Confirm Password TextField
+                My_TextField(
+                  hintText: "Confirm Password",
+                  obsecureText: true,
+                  controller: confirmpasswordController,
+                ),
+
+                SizedBox(height: 20),
+
+                // Login Button
+
+                My_Button(
+                  onTap: () => register(context),
+                  btnText: "Register",
+                ),
+
+                SizedBox(height: 20),
+
+                // register now
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Already have an account ? ",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: Colors.blue,
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                    InkWell(
+                      onTap: widget.onTap,
+                      child: Text(
+                        "Login now ",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:chat_application/pages/Splash_Screen.dart';
 import 'package:chat_application/services/auth/Auth_Gate.dart';
 import 'package:chat_application/firebase_options.dart';
 import 'package:chat_application/theme/Theme_Provider.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AuthGate(),
+      home: Splash_Screen(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:chat_application/pages/About_Page.dart';
 import 'package:chat_application/services/auth/Auth_Service.dart';
 import 'package:chat_application/pages/Settings_Page.dart';
 import 'package:flutter/material.dart';
@@ -101,7 +102,14 @@ class My_Drawer extends StatelessWidget {
                       "A B O U T",
                     ),
                     leading: Icon(Icons.info),
-                    onTap: () {}),
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => About_Page(),
+                          ));
+                    }),
               ),
             ],
           ),
