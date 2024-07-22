@@ -14,7 +14,7 @@ class Chat_Page extends StatefulWidget {
 class _Chat_PageState extends State<Chat_Page> {
   // OpenAi Instance
   final openAi = OpenAI.instance.build(
-    token: 'sk-proj-vhitQ0h7pdgQJHp76VwhT3BlbkFJ7A9bWl3dz8uF8KxeqhGO',
+    token: 'Api token paste here',
     baseOption: HttpSetup(
       receiveTimeout: Duration(seconds: 5),
     ),
