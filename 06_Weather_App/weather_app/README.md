@@ -1,6 +1,7 @@
 # weather_app
 
 A new Flutter project.
+A weather app using weather API (Select city to show your city weather).
 
 ## Getting Started
 
