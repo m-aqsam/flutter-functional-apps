@@ -1,6 +1,6 @@
 # counter_app
 
-A new Flutter project.
+A new Flutter project of Counter app using provider . (Just for practice)
 
 ## Getting Started
 
