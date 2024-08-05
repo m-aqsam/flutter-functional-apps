@@ -1,6 +1,6 @@
 # notes_app_online_database
 
-A new Flutter Noted Application project(SnapNote) with firebase database to store notes and display in app.
+A new Flutter Noted Application project(SnapNote) using Provider with firestore database to store notes and display in app.
 
 ## Getting Started
 
