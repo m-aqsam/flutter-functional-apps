@@ -1,6 +1,6 @@
 # new_counter_app
 
-A new Flutter project counter app (increment / Decrement ) with bloc state Management in Flutter.
+A new Flutter project a counter app (increment / Decrement ) with bloc state Management in Flutter.
 
 ## Getting Started
 
