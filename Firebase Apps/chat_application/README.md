@@ -1,6 +1,6 @@
 # chat_application
 
-A new Flutter Chat Application project(QuickChat) with Firebase Authentication and Database.
+A new Flutter Chat Application project(QuickChat) using provider with Firebase Authentication and Firestore Database.
 
 ## Getting Started
 
