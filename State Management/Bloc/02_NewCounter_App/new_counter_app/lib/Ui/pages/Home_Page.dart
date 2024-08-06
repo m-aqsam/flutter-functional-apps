@@ -67,7 +67,7 @@ class _Home_PageState extends State<Home_Page> {
 
                   SizedBox(width: 20),
 
-                  // decrement Button.
+                  // decrement Button
 
                   My_Button(
                     onTap: () {
