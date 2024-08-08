@@ -1,1 +1,1 @@
-All My Flutter Functional Applications in one Repository.
+All My Flutter Functional Applications in one Repo.
