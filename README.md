@@ -1,1 +1,1 @@
-Flutter Functional Apps Repo.
+All My Flutter Functional Applications in one Repo.
