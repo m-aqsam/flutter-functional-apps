@@ -10,7 +10,6 @@ class Wishlist_Page extends StatefulWidget {
 }
 
 class _Wishlist_PageState extends State<Wishlist_Page> {
-  //
   @override
   Widget build(BuildContext context) {
     return Scaffold(
