@@ -14,6 +14,12 @@ class Home_Page extends StatefulWidget {
 }
 
 class _Home_PageState extends State<Home_Page> {
+  @override
+  void initState() {
+    homeBloc.add(HomeInitialEvent());
+    super.initState();
+  }
+
   final HomeBloc homeBloc = HomeBloc();
   @override
   Widget build(BuildContext context) {
@@ -37,28 +43,51 @@ class _Home_PageState extends State<Home_Page> {
         }
       },
       builder: (context, state) {
-        return Scaffold(
-          backgroundColor: Colors.grey[300],
-          appBar: AppBar(
-            title: Text("Shopping App"),
-            backgroundColor: Colors.teal,
-            actions: [
-              IconButton(
-                onPressed: () {
-                  homeBloc.add(HomeWishlistNavigateButtonClickedEvent());
-                },
-                icon: Icon(Icons.favorite_border),
+        switch (state.runtimeType) {
+          case HomeLoadingState:
+            return Scaffold(
+              body: Center(child: CircularProgressIndicator()),
+            );
+
+          case HomeLoadingSuccessState:
+            return Scaffold(
+              backgroundColor: Colors.grey[300],
+              appBar: AppBar(
+                title: Text("Shopping App"),
+                backgroundColor: Colors.teal,
+                actions: [
+                  IconButton(
+                    onPressed: () {
+                      homeBloc.add(HomeWishlistNavigateButtonClickedEvent());
+                    },
+                    icon: Icon(Icons.favorite_border),
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      homeBloc.add(HomeCartNavigateButtonClickedEvent());
+                    },
+                    icon: Icon(Icons.shopping_bag_outlined),
+                  ),
+                ],
               ),
-              IconButton(
-                onPressed: () {
-                  homeBloc.add(HomeCartNavigateButtonClickedEvent());
-                },
-                icon: Icon(Icons.shopping_bag_outlined),
+            );
+
+          case HomeErrorState:
+            return Scaffold(
+              body: Center(
+                child: Text("Error !!"),
               ),
-            ],
-          ),
-        );
+            );
+
+          default:
+            return SizedBox();
+        }
       },
     );
   }
 }
+
+/* 
+    
+
+*/
