@@ -16,7 +16,7 @@ class _Cart_PageState extends State<Cart_Page> {
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
         title: Text("Cart"),
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.pink,
       ),
     );
   }
