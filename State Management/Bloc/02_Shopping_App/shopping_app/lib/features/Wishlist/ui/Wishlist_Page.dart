@@ -16,7 +16,7 @@ class _Wishlist_PageState extends State<Wishlist_Page> {
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
         title: Text("WishList"),
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.green,
       ),
     );
   }
