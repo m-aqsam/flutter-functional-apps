@@ -8,7 +8,7 @@ class GroceryData {
       'description': 'Fresh Banana from Ecuadoe',
       "price": 1.99,
       'imageUrl':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK-Kr7GuztnmiaByNnTh0DM0qS4XkqIdIWSGk6q4XuNP6mUO0_WvjExqDLn47mhwneYE&usqp=CAU',
+          'https://smartyield.in/wp-content/uploads/2021/06/Elaichi-banana.png',
     },
 
     // map2
@@ -19,7 +19,7 @@ class GroceryData {
       'description': 'Organic,locally grained apples',
       "price": 0.99,
       'imageUrl':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMxK6l9zUnNiuGbK6uQIXtzWC6_4XuICfZQ&s',
+          'https://domf5oio6qrcr.cloudfront.net/medialibrary/11525/0a5ae820-7051-4495-bcca-61bf02897472.jpg',
     },
 
     // map3
@@ -29,8 +29,15 @@ class GroceryData {
       "name": "Bread",
       'description': 'Fresh bread-milky bread',
       "price": 1.49,
+      'imageUrl': 'https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg'
+    },
+    {
+      "id": 4,
+      "name": "Grapes",
+      'description': 'Fresh grapes - organic and juicy',
+      "price": 1.25,
       'imageUrl':
-          'https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/16:9/w_4000,h_2250,c_limit/milk-bread.jpg'
+          'https://t3.ftcdn.net/jpg/00/71/10/72/360_F_71107237_3GNipwDTQnsDZN3cMvXr3o9SPdxt4sXx.jpg'
     }
   ];
 }
