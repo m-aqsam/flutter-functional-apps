@@ -32,7 +32,12 @@ class _Wishlist_PageState extends State<Wishlist_Page> {
         bloc: wishlistBloc,
         listenWhen: (previous, current) => current is WishlistActionState,
         buildWhen: (previous, current) => current is! WishlistActionState,
-        listener: (context, state) {},
+        listener: (context, state) {
+          if (state is RemoveProductFromWishlistState) {
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text("Product Remove From Wishlist")));
+          }
+        },
         builder: (context, state) {
           switch (state.runtimeType) {
             case WishlistSuccessState:
