@@ -32,7 +32,12 @@ class _Cart_PageState extends State<Cart_Page> {
         bloc: cartBloc,
         listenWhen: (previous, current) => current is CartActionState,
         buildWhen: (previous, current) => current is! CartActionState,
-        listener: (context, state) {},
+        listener: (context, state) {
+          if (state is RemoveFromCartState) {
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text("Product Remove From Cart")));
+          }
+        },
         builder: (context, state) {
           switch (state.runtimeType) {
             case CartSuccessState:
