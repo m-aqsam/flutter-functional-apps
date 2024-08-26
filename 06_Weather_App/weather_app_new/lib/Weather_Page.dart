@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Weather_Page extends StatelessWidget {
@@ -7,6 +9,7 @@ class Weather_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
+      //
     );
   }
 }
