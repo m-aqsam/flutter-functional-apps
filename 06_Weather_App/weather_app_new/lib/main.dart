@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:weather_app_new/Weather_Page.dart';
 
@@ -14,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Weather_Page(
-        //
-      ),
+          //
+          ),
     );
   }
 }
