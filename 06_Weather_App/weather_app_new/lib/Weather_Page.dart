@@ -9,7 +9,6 @@ class Weather_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
-      //
     );
   }
 }
