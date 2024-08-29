@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:weather_app_new/Weather_Page.dart';
+import 'package:weather_app_new/Features/Weather/Ui/pages/Weather_Page.dart';
 
 void main() {
   runApp(const MyApp());
