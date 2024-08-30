@@ -42,6 +42,7 @@ dependencies:
   flutter_bloc: ^8.1.6
   bloc: ^8.1.4
   equatable: ^2.0.5
+  http: ^1.2.2
 
 dev_dependencies:
   flutter_test:
@@ -67,7 +68,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/Assets/
+    - Assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
