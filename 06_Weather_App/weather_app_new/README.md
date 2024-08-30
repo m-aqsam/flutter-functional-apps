@@ -1,6 +1,6 @@
 # weather_app_new
 
-A new Flutter project weather app using open weather api .
+A new Flutter project weather app using open weather api and bloc .
 
 ## Getting Started
 
