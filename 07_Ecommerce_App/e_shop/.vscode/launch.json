@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "e_shop",
+            "request": "launch",
+            "type": "dart"
+        },
+        
+        {
+            "name": "e_shop (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Emulator",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5554"
+        },
+        {
+            "name": "V21e",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "bbaa821d"
+        },
+    ],
+
+    "compounds": [
+        {
+            "name": "All Devices",
+            "configurations": ["Emulator","V21e"]
+        }
+    ]
+
+    
+}
+

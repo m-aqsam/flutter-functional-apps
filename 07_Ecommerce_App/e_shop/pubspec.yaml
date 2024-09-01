@@ -1,0 +1,85 @@
+name: e_shop
+description: "A new Flutter project."
+
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+
+# ****************** Packages ******************
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # Utility Packages 
+  
+  cupertino_icons: ^1.0.6
+  iconsax: ^0.0.8
+  google_fonts: ^6.2.1
+
+  # State Management
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+
+  # Product Specific
+
+ # ****************** Packages End Here ******************
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  
+  flutter_lints: ^3.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+ # ****************** Local Assets ******************
+
+  assets:
+    - assets/fonts/
+    - assets/Icons/
+    - assets/images/
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
