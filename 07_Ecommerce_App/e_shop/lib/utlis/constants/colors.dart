@@ -17,4 +17,5 @@ class EColors {
   static const Color primaryBackground = Color(0xFFF3F5FF);
   //
   //
+  //
 }
