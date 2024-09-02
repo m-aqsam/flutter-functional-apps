@@ -16,4 +16,5 @@ class EColors {
   static const Color dark = Color(0xFF272727);
   static const Color primaryBackground = Color(0xFFF3F5FF);
   //
+  //
 }
