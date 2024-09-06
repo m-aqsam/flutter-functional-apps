@@ -12,7 +12,10 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.white,
+        body: Center(
+          child: Text("Login App"),
+        ),
       ),
       themeMode: ThemeMode.system,
       theme: EShopTheme.lightTheme,
