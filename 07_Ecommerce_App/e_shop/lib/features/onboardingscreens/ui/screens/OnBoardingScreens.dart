@@ -1,9 +1,15 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:e_shop/features/onboardingscreens/ui/components/on_boarding_page.dart';
+import 'package:e_shop/features/onboardingscreens/ui/components/rounded_button.dart';
+import 'package:e_shop/features/onboardingscreens/ui/components/skip_button.dart';
+import 'package:e_shop/features/onboardingscreens/ui/components/smooth_page_indicator.dart';
+import 'package:e_shop/utlis/constants/colors.dart';
 import 'package:e_shop/utlis/constants/image_strings.dart';
 import 'package:e_shop/utlis/constants/text_strings.dart';
+import 'package:e_shop/utlis/device/device_utlis.dart';
 import 'package:e_shop/utlis/helpers/helper_functions.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -14,6 +20,8 @@ class OnBoardingScreen extends StatefulWidget {
 }
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
+  PageController _controller = PageController();
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +30,12 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           //*  PageView
 
           PageView(
+            controller: _controller,
+            onPageChanged: (index) {
+              setState(() {
+                currentIndex = index;
+              });
+            },
             children: [
               //  First Page
 
@@ -49,9 +63,30 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
           //* Skip Button
 
+          SkipButton(
+            onTAp: () {
+              _controller.jumpToPage(2);
+            },
+          ),
+
           //* Dot NAvigation SmoothPAgeIndicator
 
+          Smooth_Page_Indicator(
+            pageController: _controller,
+          ),
+
           //* Rounded Button
+
+          Rounded_Button(onTap: () {
+            if (currentIndex == 2) {
+              // Go To Login PAge
+            } else {
+              _controller.nextPage(
+                duration: Duration(microseconds: 500),
+                curve: Curves.easeIn,
+              );
+            }
+          }),
         ],
       ),
     );
