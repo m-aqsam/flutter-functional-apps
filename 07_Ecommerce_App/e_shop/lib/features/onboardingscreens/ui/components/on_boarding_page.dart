@@ -21,7 +21,7 @@ class OnBoardingPage extends StatelessWidget {
           // Image/Illustration
 
           Image(
-            height: EHelperFunctions.screenHeight() * 0.65,
+            height: EHelperFunctions.screenHeight() * 0.60,
             width: EHelperFunctions.screenWidth() * 0.8,
             image: AssetImage(image),
           ),
@@ -36,10 +36,13 @@ class OnBoardingPage extends StatelessWidget {
 
           SizedBox(height: 12),
           // Sub Heading
-          Text(
-            subText,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
+          SizedBox(
+            width: 250,
+            child: Text(
+              subText,
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center,
+            ),
           ),
         ],
       ),
