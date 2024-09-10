@@ -20,7 +20,7 @@ class OnBoardingScreen extends StatefulWidget {
 }
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
-  PageController _controller = PageController();
+  final PageController _controller = PageController();
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             } else {
               _controller.nextPage(
                 duration: Duration(microseconds: 500),
-                curve: Curves.easeIn,
+                curve: Curves.easeIne,
               );
             }
           }),
