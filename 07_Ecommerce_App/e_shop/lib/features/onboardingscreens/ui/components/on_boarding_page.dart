@@ -33,8 +33,9 @@ class OnBoardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
+          //
 
-          SizedBox(height: 12),
+          const SizedBox(height: 12),
           // Sub Heading
           SizedBox(
             width: 250,
