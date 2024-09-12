@@ -19,12 +19,12 @@ class Rounded_Button extends StatelessWidget {
         right: 30,
         child: ElevatedButton(
           onPressed: onTap,
-          child: Icon(Iconsax.arrow_right_3),
           style: ElevatedButton.styleFrom(
             shape: CircleBorder(
               side: BorderSide(),
             ),
           ),
-        ));
+          child: Icon(Iconsax.arrow_right_3),
+        )); //
   }
 }
