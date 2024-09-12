@@ -16,7 +16,6 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10),
-      //
       child: Column(
         children: [
           // Image/Illustration
