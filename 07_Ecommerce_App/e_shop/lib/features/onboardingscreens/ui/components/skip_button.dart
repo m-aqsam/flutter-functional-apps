@@ -11,7 +11,8 @@ class SkipButton extends StatelessWidget {
       right: Checkbox.width,
       child: TextButton(
         onPressed: onTAp,
-        child: Text("Skip"),
+        child: const Text("Skip"),
+        //
       ),
     );
   }
