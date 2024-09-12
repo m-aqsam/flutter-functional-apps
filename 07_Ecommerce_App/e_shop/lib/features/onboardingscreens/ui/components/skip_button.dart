@@ -12,7 +12,6 @@ class SkipButton extends StatelessWidget {
       child: TextButton(
         onPressed: onTAp,
         child: const Text("Skip"),
-        //
       ),
     );
   }
