@@ -3,7 +3,7 @@
 
 This is the Repo is the collection of flutter functional applications are design and develop by me using flutter with ❤️.
 
-# 1 : ToDo App
+# 1 : ToDo App 📱
 
 
 
