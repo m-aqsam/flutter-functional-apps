@@ -1,1 +1,7 @@
-Flutter Functional Applications with mockups and videos in one Repository.
+
+# All the Applications int his repo  are build using Flutter with ❤️.
+
+This is the Repo is the collection of flutter functional applications are design and develop by me using flutter with ❤️.
+
+#1 ToDo App
+
