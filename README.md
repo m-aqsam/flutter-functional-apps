@@ -7,6 +7,8 @@ This is the Repo is the collection of flutter functional applications are design
 
 ![ToDo App](https://github.com/user-attachments/assets/bdb7fb19-a4b5-4c07-8b0e-6946c345e805)
 
+# 2 : NotesWall App 📱
+
 ## Author
 
 - [@m-aqsam](https://github.com/m-aqsam)
