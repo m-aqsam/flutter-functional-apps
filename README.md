@@ -10,7 +10,7 @@ This Repo is the collection of flutter functional applications are design and de
 
 # 2 : SnapNotes App 📱
 
-![T![450_3x_shots_so](https://github.com/user-attachments/assets/14071014-3d2a-40da-b0fe-423e9c6a06c0)
+![SnapNotes](https://github.com/user-attachments/assets/14071014-3d2a-40da-b0fe-423e9c6a06c0)
 
 
 
