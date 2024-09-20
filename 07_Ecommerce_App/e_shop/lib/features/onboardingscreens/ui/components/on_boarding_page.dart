@@ -27,6 +27,7 @@ class OnBoardingPage extends StatelessWidget {
           ),
 
           // Heading
+          //
 
           Text(
             text,
