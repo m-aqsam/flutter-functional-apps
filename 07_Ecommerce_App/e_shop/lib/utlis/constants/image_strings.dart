@@ -5,12 +5,12 @@ class EImages {
   static String lightAppLogo = "";
   static String darkAppLogo = "";
 
-  // Social Platforms
+  // Social Platforms..
 
   static String facebook = "";
   static String google = "";
 
-  // OnBoarding Images
+  // OnBoarding Images..
 
   static String onBoardingImage1 =
       "assets/images/on_boarding_images/select-product.gif";
