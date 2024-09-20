@@ -22,7 +22,7 @@ class _Home_PageState extends State<Home_Page> {
 
 // TextField Controller
 
-  final TextEditingController txtController = new TextEditingController();
+  final TextEditingController txtController = TextEditingController();
   // open input dialogue box
 
   void openNoteBox({String? docID}) {
