@@ -4,12 +4,8 @@ import 'package:e_shop/features/onboardingscreens/ui/components/on_boarding_page
 import 'package:e_shop/features/onboardingscreens/ui/components/rounded_button.dart';
 import 'package:e_shop/features/onboardingscreens/ui/components/skip_button.dart';
 import 'package:e_shop/features/onboardingscreens/ui/components/smooth_page_indicator.dart';
-import 'package:e_shop/utlis/constants/colors.dart';
 import 'package:e_shop/utlis/constants/image_strings.dart';
 import 'package:e_shop/utlis/constants/text_strings.dart';
-import 'package:e_shop/utlis/device/device_utlis.dart';
-import 'package:e_shop/utlis/helpers/helper_functions.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {
