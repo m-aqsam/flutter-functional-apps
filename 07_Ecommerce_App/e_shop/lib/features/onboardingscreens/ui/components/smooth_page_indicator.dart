@@ -12,6 +12,7 @@ class Smooth_Page_Indicator extends StatelessWidget {
     super.key,
     required this.pageController,
   });
+  //
 
   @override
   Widget build(BuildContext context) {
