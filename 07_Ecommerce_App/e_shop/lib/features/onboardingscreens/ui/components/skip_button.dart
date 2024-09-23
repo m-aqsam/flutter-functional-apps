@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class SkipButton extends StatelessWidget {
   final void Function()? onTAp;
   const SkipButton({super.key, required this.onTAp});
-  //
 
   @override
   Widget build(BuildContext context) {
