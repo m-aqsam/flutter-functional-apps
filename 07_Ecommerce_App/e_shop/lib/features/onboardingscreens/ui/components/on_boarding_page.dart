@@ -20,6 +20,8 @@ class OnBoardingPage extends StatelessWidget {
         children: [
           // Image/Illustration
 
+          //
+
           Image(
             height: EHelperFunctions.screenHeight() * 0.60,
             width: EHelperFunctions.screenWidth() * 0.8,
