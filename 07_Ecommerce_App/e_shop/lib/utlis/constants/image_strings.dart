@@ -10,7 +10,7 @@ class EImages {
   static String facebook = "";
   static String google = "";
 
-  // OnBoarding Images..
+  // OnBoarding Images
 
   static String onBoardingImage1 =
       "assets/images/on_boarding_images/select-product.gif";
