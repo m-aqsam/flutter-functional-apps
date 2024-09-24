@@ -33,7 +33,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               });
             },
             children: [
-              //  First Page
+              //  1st Page
 
               OnBoardingPage(
                 image: EImages.onBoardingImage1,
@@ -58,7 +58,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ),
 
           //* Skip Button
-          //
 
           SkipButton(
             onTAp: () {
