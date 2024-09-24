@@ -58,6 +58,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ),
 
           //* Skip Button
+          //
 
           SkipButton(
             onTAp: () {
@@ -65,7 +66,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             },
           ),
 
-          //* Dot NAvigation SmoothPAgeIndicator
+          //* Dot Navigation SmoothPAgeIndicator
 
           Smooth_Page_Indicator(
             pageController: _controller,
