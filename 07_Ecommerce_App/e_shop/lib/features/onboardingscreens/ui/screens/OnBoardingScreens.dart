@@ -65,7 +65,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             },
           ),
 
-          //* Dot Navigation SmoothPAgeIndicator
+          //* Dot Navigation SmoothPageIndicator
 
           Smooth_Page_Indicator(
             pageController: _controller,
