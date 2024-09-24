@@ -13,16 +13,17 @@ class Rounded_Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        bottom: 38,
-        right: 30,
-        child: ElevatedButton(
-          onPressed: onTap,
-          style: ElevatedButton.styleFrom(
-            shape: CircleBorder(
-              side: BorderSide(),
-            ),
+      bottom: 38,
+      right: 30,
+      child: ElevatedButton(
+        onPressed: onTap,
+        style: ElevatedButton.styleFrom(
+          shape: CircleBorder(
+            side: BorderSide(),
           ),
-          child: Icon(Iconsax.arrow_right_3),
-        ));
+        ),
+        child: Icon(Iconsax.arrow_right_3),
+      ),
+    );
   }
 }
