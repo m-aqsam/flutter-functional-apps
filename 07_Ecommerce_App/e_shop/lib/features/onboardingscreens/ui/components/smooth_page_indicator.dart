@@ -17,16 +17,17 @@ class Smooth_Page_Indicator extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = EHelperFunctions.isDarkMode(context);
     return Positioned(
-        bottom: EDeviceUtlis.getBottomNavigationBarHeight(),
-        left: 30,
-        child: SmoothPageIndicator(
-          controller: pageController,
-          count: 3,
-          effect: ExpandingDotsEffect(
-            activeDotColor: dark ? EColors.light : EColors.dark,
-            dotColor: EColors.darkGrey,
-            dotHeight: 8,
-          ),
-        ));
+      bottom: EDeviceUtlis.getBottomNavigationBarHeight(),
+      left: 30,
+      child: SmoothPageIndicator(
+        controller: pageController,
+        count: 3,
+        effect: ExpandingDotsEffect(
+          activeDotColor: dark ? EColors.light : EColors.dark,
+          dotColor: EColors.darkGrey,
+          dotHeight: 8,
+        ),
+      ),
+    );
   }
 }
