@@ -40,7 +40,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 text: ETexts.onBoardingTitle1,
                 subText: ETexts.onBoardingSubTitle1,
               ),
-              //  Second Page
+              //  2nd Page
 
               OnBoardingPage(
                 image: EImages.onBoardingImage2,
