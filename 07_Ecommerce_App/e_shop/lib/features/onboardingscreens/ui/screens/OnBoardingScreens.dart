@@ -75,7 +75,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
           Rounded_Button(onTap: () {
             if (currentIndex == 2) {
-              // Go To Login PAge
+              // Go To Login Page
             } else {
               _controller.nextPage(
                 duration: Duration(microseconds: 500),
