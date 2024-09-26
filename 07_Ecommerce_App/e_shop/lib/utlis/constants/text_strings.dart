@@ -12,7 +12,7 @@ class ETexts {
       "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
   static const String onBoardingSubTitle3 =
       "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
-// --_ Home
+// -- Home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Eshop ";
 }
