@@ -1,2 +1,4 @@
 //* All Api Constants are here
-class EApiConstants {}
+class EApiConstants {
+  //
+}
