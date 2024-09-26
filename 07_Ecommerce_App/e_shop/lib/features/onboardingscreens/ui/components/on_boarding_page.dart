@@ -45,7 +45,7 @@ class OnBoardingPage extends StatelessWidget {
             ),
           ),
         ],
-        //
+        
       ),
     );
   }
