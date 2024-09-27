@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 void main() {
   //WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   //FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  //
+
   runApp(const App());
 
   // Todo: Add Widget Binding
