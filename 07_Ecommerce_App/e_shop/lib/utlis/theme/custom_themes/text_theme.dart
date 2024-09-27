@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class ETextTheme {
   ETextTheme._();
 
-  // ************************* lightTextTheme ****************************
+  // ************************* lightTextTheme ***************************
 
   static TextTheme lightTextTheme = TextTheme(
     headlineLarge: TextStyle().copyWith(

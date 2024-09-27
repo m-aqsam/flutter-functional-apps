@@ -15,7 +15,7 @@ class EOutlinedButtonTheme {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
     ),
   ); // Outlined Button ThemeData
-/* Dark Theme -- */
+// Dark Theme --
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       foregroundColor: Colors.white,
