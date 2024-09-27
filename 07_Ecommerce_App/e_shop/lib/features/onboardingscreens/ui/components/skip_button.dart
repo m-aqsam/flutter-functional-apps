@@ -15,4 +15,5 @@ class SkipButton extends StatelessWidget {
       ),
     );
   }
+  //
 }
