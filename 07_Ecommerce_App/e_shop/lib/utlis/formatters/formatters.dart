@@ -20,7 +20,7 @@ class EFormastters {
       return ' (${phoneNumber.substring(0, 4)}) ${phoneNumber.substring(4, 7)} ${phoneNumber.substring(7)}';
     }
 
-    // Add more conditions if required according to phone formats
+    // Add more Conditions if required according to phone formats
     return phoneNumber;
   }
 }
