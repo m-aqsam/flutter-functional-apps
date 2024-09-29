@@ -22,7 +22,7 @@ class ECheckboxTheme {
     }),
   );
 
-  /// Customizable Dark Text Theme
+  // Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
