@@ -26,5 +26,5 @@ class EOutlinedButtonTheme {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
     ),
   ); // Outlined Button ThemeData// Outlined Button ThemeData
-  // Outlined Button ThemeData
+   // Outlined Button ThemeData
 }
