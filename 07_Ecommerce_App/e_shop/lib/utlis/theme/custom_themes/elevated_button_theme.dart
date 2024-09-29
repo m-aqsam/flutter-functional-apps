@@ -18,7 +18,7 @@ class EElevatedButtonTheme {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
     ),
   ); // ElevatedButton ThemeData
-  /// Dark Theme
+  // Dark Theme
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
