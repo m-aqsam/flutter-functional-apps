@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/* Light & Dark Outlined Button Themes -- */
+// Light & Dark Outlined Button Themes -- 
 class EOutlinedButtonTheme {
   EOutlinedButtonTheme._(); //To avoid creating instances
 // Light Theme --
