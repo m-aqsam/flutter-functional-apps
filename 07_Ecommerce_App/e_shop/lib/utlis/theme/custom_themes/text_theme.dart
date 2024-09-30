@@ -43,7 +43,7 @@ class ETextTheme {
     //
   );
 
-  // ************************* darkTextTheme ****************************
+  // ************************ darkTextTheme ****************************
 
   static TextTheme darkTextTheme = TextTheme(
     headlineLarge: TextStyle().copyWith(
