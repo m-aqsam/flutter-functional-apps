@@ -26,5 +26,4 @@ class Rounded_Button extends StatelessWidget {
       ),
     );
   }
-  //
 }
