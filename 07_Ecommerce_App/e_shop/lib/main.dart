@@ -14,5 +14,5 @@ void main() {
   // Todo: Await Native Splash Screen
   // Todo: Initialize Firebase
   // Todo: Initialize Authentication
-  
+  //
 }
