@@ -29,6 +29,5 @@ class Smooth_Page_Indicator extends StatelessWidget {
         ),
       ),
     );
-    //
   }
 }
