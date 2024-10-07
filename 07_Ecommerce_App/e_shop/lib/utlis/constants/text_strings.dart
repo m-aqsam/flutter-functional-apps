@@ -16,12 +16,19 @@ class ETexts {
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Eshop ";
 
-// -- Login Page 
-  static const String loginTitle = "Welcome Back!";
-  static const String loginSubTitle = "Please login to your account";
+// -- Login Page
+  static const String loginTitle = "Welcome Back,";
+  static const String loginSubTitle =
+      "Log in to enjoy a seamless shopping experience.";
   static const String loginEmail = "Email";
   static const String loginPassword = "Password";
+  static const String loginEmailHint = "Enter your email";
+  static const String loginPasswordHint = "Enter your password";
+  static const String loginRememberMe = "Remember me";
   static const String loginForgotPassword = "Forgot Password?";
   static const String loginButton = "Login";
-  static const String loginSignUp = "Don't have an account? Sign Up";
+  static const String createAccount = "Create an Account";
+  static const String orSignUpWith = "or sign up with";
+  static const String loginAccount = "Don't have an account?";
+  static const String loginSignUp = "Sign Up";
 }
