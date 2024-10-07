@@ -2,8 +2,8 @@
 
 class EImages {
   // App Logo
-  static String lightAppLogo = "";
-  static String darkAppLogo = "";
+  static String eshopLogo = "assets/images/login_page_images/eshop_logo2.png";
+  
 
   // Social Platforms
 
@@ -18,4 +18,8 @@ class EImages {
       "assets/images/on_boarding_images/select-payment-method.gif";
   static String onBoardingImage3 =
       "assets/images/on_boarding_images/deliver-product.gif";
+
+  // Login Screen Images
+
+  
 }
