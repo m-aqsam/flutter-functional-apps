@@ -13,6 +13,6 @@ void main() {
   // Todo: Init Local Storage
   // Todo: Await Native Splash Screen
   // Todo: Initialize Firebase
-  // Todo: Initialize Authentication
+  // Todo: Initialize  Authentication
   
 }
