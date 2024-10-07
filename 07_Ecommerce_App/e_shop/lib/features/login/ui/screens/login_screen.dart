@@ -1,18 +1,14 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:ffi';
 
 import 'package:e_shop/common/styles/spacing_style.dart';
 import 'package:e_shop/utlis/constants/colors.dart';
 import 'package:e_shop/utlis/constants/image_strings.dart';
 import 'package:e_shop/utlis/constants/text_strings.dart';
 import 'package:e_shop/utlis/helpers/helper_functions.dart';
-import 'package:e_shop/utlis/theme/custom_themes/text_theme.dart';
-import 'package:e_shop/utlis/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../utlis/theme/custom_themes/text_theme.dart';
 
 class Login_Screen extends StatelessWidget {
   const Login_Screen({super.key});
@@ -132,7 +128,7 @@ class Login_Screen extends StatelessWidget {
 
                         
 
-                        // *********************  Sign up With *********************
+                        // **********************  Sign up With *********************
                       ],
                     ),
                   )
