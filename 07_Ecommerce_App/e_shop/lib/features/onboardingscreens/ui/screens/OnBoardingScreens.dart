@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:e_shop/features/login/ui/screens/login_screen.dart';
+import 'package:e_shop/features/Authentication/login/ui/screens/login_screen.dart';
 import 'package:e_shop/features/onboardingscreens/ui/components/on_boarding_page.dart';
 import 'package:e_shop/features/onboardingscreens/ui/components/rounded_button.dart';
 import 'package:e_shop/features/onboardingscreens/ui/components/skip_button.dart';
@@ -74,21 +74,21 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
           //* Rounded Button
 
-            Rounded_Button(onTap: () {
+          Rounded_Button(onTap: () {
             if (currentIndex == 2) {
               Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => Login_Screen()),
+                context,
+                MaterialPageRoute(builder: (context) => Login_Screen()),
               );
             } else {
               _controller.nextPage(
-              duration: Duration(milliseconds: 500),
-              curve: Curves.easeIn,
+                duration: Duration(milliseconds: 500),
+                curve: Curves.easeIn,
               );
             }
-            }),
-          ],
-          ),
+          }),
+        ],
+      ),
     );
   }
 }
