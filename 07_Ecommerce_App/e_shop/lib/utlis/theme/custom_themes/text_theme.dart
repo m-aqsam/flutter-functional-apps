@@ -39,7 +39,7 @@ class ETextTheme {
     labelMedium: TextStyle().copyWith(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
-        color: Colors.black.withOpacity(0.5)),
+        color: Colors.black.withOpacity(0.8)),
     //
   );
 
