@@ -99,7 +99,7 @@ class _Login_ScreenState extends State<Login_Screen> {
                                   prefixIcon: Icon(Iconsax.lock),
                                   suffixIcon: Icon(Iconsax.eye_slash)),
                             ),
-                            SizedBox(height: 6),
+                            SizedBox(height: 16),
 
                             // *********************  Forgot Password *********************
 
@@ -108,8 +108,13 @@ class _Login_ScreenState extends State<Login_Screen> {
                               children: [
                                 Row(
                                   children: [
-                                    Checkbox(
-                                        value: true, onChanged: (value) {}),
+                                    SizedBox(
+                                      height: 24,
+                                      width: 24,
+                                      child: Checkbox(
+                                          value: true, onChanged: (value) {}),
+                                    ),
+                                    SizedBox(width: 8),
                                     Text(ETexts.loginRememberMe),
                                   ],
                                 ),
