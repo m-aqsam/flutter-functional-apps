@@ -1,5 +1,4 @@
 import 'package:e_shop/utlis/constants/colors.dart';
-import 'package:e_shop/utlis/constants/text_strings.dart';
 import 'package:e_shop/utlis/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +7,7 @@ class Form_Divider extends StatelessWidget {
   const Form_Divider({
     super.key,
     required this.text,
-    });
+  });
 
   @override
   Widget build(BuildContext context) {
