@@ -1,4 +1,7 @@
 {
     "pieces.cloudCapabilities": "Blended",
-    "pieces.telemetry": true
+    "pieces.telemetry": true,
+    "cSpell.words": [
+        "Aqsam"
+    ]
 }
