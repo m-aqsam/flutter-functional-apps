@@ -31,4 +31,18 @@ class ETexts {
   static const String orSignUpWith = "or sign up with";
   static const String loginAccount = "Don't have an account?";
   static const String loginSignUp = "Sign Up";
+
+  // -- Sign Up Page
+  static const String signUpTitle = "Let's create your account";
+  static const String signUpFirstName = "First Name";
+  static const String signUpLastName = "Last Name";
+  static const String signUpUserName = "Username";
+  static const String signUpEmail = "Email";
+  static const String signUpPhoneNumber = "Phone Number";
+  static const String signUpPassword = "Password";
+  static const String signUpIAgree = "I agree with";
+  static const String signUpPrivacyPolicy = "Privacy Policy";
+  static const String signUpAnd = "and";
+  static const String signUpTermOfUse = "Term of Use";
+  static const String signUpCreateAccount = "Create Account";
 }
