@@ -21,5 +21,6 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   FutureOr<void> loginCreateAccountNavigateClickedEvent(
       LoginCreateAccountNavigateClickedEvent event, Emitter<LoginState> emit) {
     print("Create Account Button Clicked");
+    emit(LoginNavigateToCreateAccountPageActionState());
   }
 }
