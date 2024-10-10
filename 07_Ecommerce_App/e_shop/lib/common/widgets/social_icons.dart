@@ -2,7 +2,6 @@
 
 import 'package:e_shop/utlis/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class Social_Icons extends StatelessWidget {
   final void Function()? onGooglePressed;
@@ -11,8 +10,7 @@ class Social_Icons extends StatelessWidget {
     super.key,
     required this.onGooglePressed,
     required this.onFacebookPressed,
-    
-    });
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +43,7 @@ class Social_Icons extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
-            onPressed:onFacebookPressed,
+            onPressed: onFacebookPressed,
             icon: Image(
                 image: AssetImage(
               "assets/logo/facebook_logo.png",
