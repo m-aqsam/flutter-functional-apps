@@ -14,7 +14,7 @@ class Privacy_Policy_Text extends StatelessWidget {
               height: 24,
               child: Checkbox(value: true, onChanged: (value) {})),
         ),
-        SizedBox(width: 4),
+        const SizedBox(width: 4),
         Text.rich(TextSpan(
           children: [
             TextSpan(
