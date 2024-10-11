@@ -61,6 +61,7 @@ class SignUp_Form extends StatelessWidget {
           ),
 
           SizedBox(height: 20),
+
           // Phone Number
 
           TextFormField(
