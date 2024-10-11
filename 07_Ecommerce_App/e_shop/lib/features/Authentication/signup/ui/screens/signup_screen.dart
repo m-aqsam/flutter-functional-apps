@@ -69,7 +69,7 @@ class Signup_Screen extends StatelessWidget {
 
                 SizedBox(height: 24),
 
-                // *********8*********  Social Icons *******************
+                // ******************  Social Icons *******************
 
                 Social_Icons(
                   onGooglePressed: () {},
