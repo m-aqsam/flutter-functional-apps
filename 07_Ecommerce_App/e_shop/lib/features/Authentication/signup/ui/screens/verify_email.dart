@@ -15,9 +15,9 @@ class Verify_Email_Screen extends StatelessWidget {
           padding: ESpacingStyle.paddingWithAppBarHeight,
           child: Column(
             children: [
-              //***************  Image ****************
+              //***************  Image ***************
 
-              //***************  Tittle ****************
+              //***************  Tittle ***************
 
               //***************  Description ***************
 
