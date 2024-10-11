@@ -15,28 +15,30 @@ class Privacy_Policy_Text extends StatelessWidget {
               child: Checkbox(value: true, onChanged: (value) {})),
         ),
         const SizedBox(width: 4),
-        Text.rich(TextSpan(
-          children: [
-            TextSpan(
-                text: ETexts.signUpIAgree,
-                style: Theme.of(context).textTheme.bodySmall),
-            TextSpan(
-              text: ' ${ETexts.signUpPrivacyPolicy}',
-              style: TextStyle(
-                color: Theme.of(context).primaryColor,
+        Text.rich(
+          TextSpan(
+            children: [
+              TextSpan(
+                  text: ETexts.signUpIAgree,
+                  style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(
+                text: ' ${ETexts.signUpPrivacyPolicy}',
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                ),
               ),
-            ),
-            TextSpan(
-                text: ' ${ETexts.signUpAnd} ',
-                style: Theme.of(context).textTheme.bodySmall),
-            TextSpan(
-              text: ETexts.signUpTermOfUse,
-              style: TextStyle(
-                color: Theme.of(context).primaryColor,
+              TextSpan(
+                  text: ' ${ETexts.signUpAnd} ',
+                  style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(
+                text: ETexts.signUpTermOfUse,
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                ),
               ),
-            ),
-          ],
-        ))
+            ],
+          ),
+        ),
       ],
     );
   }
