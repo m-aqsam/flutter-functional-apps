@@ -21,7 +21,7 @@ class Verify_Email_Screen extends StatelessWidget {
 
               //***************  Description ***************
 
-              //***************  Buttons ***************
+              //***************  Buttons ****************
             ],
           ),
         ),
