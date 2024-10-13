@@ -12,6 +12,7 @@ class SignUp_Form extends StatelessWidget {
     return Form(
       child: Column(
         children: [
+          // First Name & Last Name
           Row(
             children: [
               Expanded(
