@@ -45,4 +45,17 @@ class ETexts {
   static const String signUpAnd = "and";
   static const String signUpTermOfUse = "Term of Use";
   static const String signUpCreateAccount = "Create Account";
+
+  // -- Email Verify Page
+
+  static const String verifyEmailTitle = "Verify your email address!";
+  static const String verifyEmailSubTitle =
+      "We have sent a verification link to your email address. Please verify your email address to continue.";
+  static const String verifyEmailContinueButton = "Continue";
+  static const String verifyEmailResend = "Resend Email";
+
+  // -- Success Screen
+  static const String successScreenTitle = "Your Account Successfully created!";
+  static const String successScreenDescription =
+      "You can now enjoy a seamless shopping experience with Eshop Explore a wide range of products tailored to your needs Happy shopping and thank you for choosing us!";
 }
