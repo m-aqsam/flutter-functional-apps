@@ -8,6 +8,7 @@ class Privacy_Policy_Text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        // Check Box
         SizedBox(
           child: SizedBox(
               width: 24,
@@ -15,6 +16,8 @@ class Privacy_Policy_Text extends StatelessWidget {
               child: Checkbox(value: true, onChanged: (value) {})),
         ),
         const SizedBox(width: 4),
+
+        // Privacy Policy Text
         Text.rich(
           TextSpan(
             children: [
