@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:e_shop/common/styles/spacing_style.dart';
-import 'package:e_shop/common/widgets/success_screen.dart';
+import 'package:e_shop/common/widgets/succes_screen.dart';
 import 'package:e_shop/features/Authentication/login/ui/screens/login_screen.dart';
 import 'package:e_shop/utlis/constants/image_strings.dart';
 import 'package:e_shop/utlis/constants/text_strings.dart';
@@ -92,6 +92,8 @@ class Verify_Email_Screen extends StatelessWidget {
                     },
                     child: Text(ETexts.verifyEmailContinueButton)),
               ),
+
+              // Email Resend Button
 
               SizedBox(
                 width: double.infinity,
