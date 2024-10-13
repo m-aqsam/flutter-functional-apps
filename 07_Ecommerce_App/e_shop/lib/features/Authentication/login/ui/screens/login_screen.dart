@@ -9,7 +9,6 @@ import 'package:e_shop/common/widgets/social_icons.dart';
 import 'package:e_shop/utlis/constants/colors.dart';
 import 'package:e_shop/utlis/constants/image_strings.dart';
 import 'package:e_shop/utlis/constants/text_strings.dart';
-import 'package:e_shop/utlis/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -26,8 +25,6 @@ class _Login_ScreenState extends State<Login_Screen> {
 
   @override
   Widget build(BuildContext context) {
-    final dark = EHelperFunctions.isDarkMode(context);
-
     return SafeArea(
       child: BlocConsumer<LoginBloc, LoginState>(
         bloc: loginBloc,
