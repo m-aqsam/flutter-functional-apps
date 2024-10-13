@@ -12,7 +12,7 @@ class SignUp_Form extends StatelessWidget {
     return Form(
       child: Column(
         children: [
-          // First Name & Last Name
+          // First Name &
           Row(
             children: [
               Expanded(
@@ -25,6 +25,9 @@ class SignUp_Form extends StatelessWidget {
                 ),
               ),
               SizedBox(width: 20),
+
+              //  Last Name
+
               Expanded(
                 child: TextFormField(
                   decoration: InputDecoration(
