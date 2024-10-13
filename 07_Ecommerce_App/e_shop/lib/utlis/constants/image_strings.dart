@@ -3,7 +3,6 @@
 class EImages {
   // App Logo
   static String eshopLogo = "assets/images/login_page_images/eshop_logo2.png";
-  
 
   // Social Platforms
 
@@ -19,7 +18,13 @@ class EImages {
   static String onBoardingImage3 =
       "assets/images/on_boarding_images/deliver-product.gif";
 
-  // Login Screen Images
+  // Animations Images
 
-  
+  static String animationAccountCreated =
+      "assets/animations/account_created.gif";
+
+  static String animationEmailVerified =
+      "assets/animations/email_verification.gif";
+  static String animationSuccess = "assets/animations/succes_png.png";
+  static String animationActiveManCheering = "assets/animations/active_man.gif";
 }
