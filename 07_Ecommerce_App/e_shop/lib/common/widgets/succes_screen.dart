@@ -58,6 +58,7 @@ class Success_Screen extends StatelessWidget {
                     onPressed: onPressed,
                     child: Text(ETexts.verifyEmailContinueButton)),
               ),
+              //
             ],
           ),
         ),
