@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:chat_application/pages/Splash_Screen.dart';
-import 'package:chat_application/services/auth/Auth_Gate.dart';
+import 'package:chat_application/app.dart';
 import 'package:chat_application/firebase_options.dart';
 import 'package:chat_application/theme/Theme_Provider.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -19,16 +18,8 @@ void main() async {
   ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Splash_Screen(),
-      theme: Provider.of<ThemeProvider>(context).themeData,
-    );
-  }
-}
+  // * Built using Flutter with ❤️ by Aqsam.
+  // ! Give Your Feedback
+  // ? Got any question
+  // Todo: Let's Connect
