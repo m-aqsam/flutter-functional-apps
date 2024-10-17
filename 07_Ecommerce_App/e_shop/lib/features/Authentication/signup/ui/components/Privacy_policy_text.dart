@@ -42,6 +42,7 @@ class Privacy_Policy_Text extends StatelessWidget {
             ],
           ),
         ),
+        //
       ],
     );
   }
