@@ -100,8 +100,6 @@ class Verify_Email_Screen extends StatelessWidget {
                 child: TextButton(
                     onPressed: () {}, child: Text(ETexts.verifyEmailResend)),
               ),
-
-              //
             ],
           ),
         ),
