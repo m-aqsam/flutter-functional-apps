@@ -63,7 +63,7 @@ class Signup_Screen extends StatelessWidget {
 
                 SizedBox(height: 24),
 
-                // *******************  Or Sign Up With ******************
+                // *******************  Or Sign Up With *****************
 
                 Form_Divider(text: ETexts.orSignUpWith),
 
