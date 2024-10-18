@@ -26,7 +26,7 @@ class OnBoardingPage extends StatelessWidget {
             image: AssetImage(image),
           ),
 
-          // Heading
+          // Heading.
 
           Text(
             text,
